@@ -9,3 +9,8 @@ http://lammps.sandia.gov/
 
 https://sourceforge.net/projects/lammps/ 
 
+
+
+https://github.com/schoenemeyer/LAMMPS-in-Azure/blob/master/lammps.png
+
+
