@@ -10,6 +10,6 @@ http://lammps.sandia.gov/
 https://sourceforge.net/projects/lammps/ 
 
 
-<img src="https://github.com/schoenemeyer/LAMMPS-in-Azure/blob/master/lammps.png" width="252">
+<img src="https://github.com/schoenemeyer/LAMMPS-in-Azure/blob/master/lammps.png" width="352">
 
 
