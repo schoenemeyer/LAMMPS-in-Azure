@@ -8,6 +8,7 @@ The purpose of this project is to demonstrate the possibility of running LAMMPS 
 The source can be downloaded from https://sourceforge.net/projects/lammps/ 
 Standard Benchmarks are collected in http://lammps.sandia.gov/bench.html
 
+For this lab, it is not neccessary to download anything. The script below will download precompiled binaries and benchmark data.
 
 ## Performance in Azure
 
@@ -34,11 +35,8 @@ will show the available ids, e.g. "id": c45f88-90......4r" and the parameter "is
 ```
 az account set -s "your preferred subscription id"
 ```
-Create a resource group that contains your private infrastructure in your preferred region. A list of Azure regions can be found here https://azure.microsoft.com/en-us/global-infrastructure/regions/
-```
-az group create -n wrflab -l northeurope  
+before you start the vmss script below, please consider the choice of your preferred region. A list of Azure regions can be found here https://azure.microsoft.com/en-us/global-infrastructure/regions/
 
-```
 Decide for the number of nodes you are going to run, e.g. 2, and you will get a cluster with 2 nodes connected with FDR and CentOS 7.4 images with Intel MPI 5.1.3.223. Make sure you set your username correctly in the third line in the script vmss-wrf.sh.
 ```
 ./vmss-lammps.sh 2
