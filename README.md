@@ -1,5 +1,5 @@
 # LAMMPS-in-Azure
-How to run LAMMPS March 2018 in Azure with VMSS
+How to run LAMMPS Version 16 March 2018 in Azure with Virtual Machine Scale Sets (VMSS)
 
 ## Introduction
 
@@ -8,7 +8,7 @@ The purpose of this project is to demonstrate the possibility of running LAMMPS 
 The source can be downloaded from https://sourceforge.net/projects/lammps/ 
 Standard Benchmarks are collected in http://lammps.sandia.gov/bench.html
 
-For this lab, it is not neccessary to download anything. The script below will download precompiled binaries and benchmark data.
+For this lab, it is not neccessary to download anything. The script below will download precompiled binaries and benchmark data. The VMs will be automatically deployed with CentOS 7.4 HPC and some necessary packages to run LAMMPS. We are using Version March 2018.
 
 ## Performance in Azure
 
