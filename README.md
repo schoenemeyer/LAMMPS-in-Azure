@@ -22,7 +22,7 @@ Here is the performance for the Rhodopsin protein benchmark on the H16r series i
 These are the basic steps in this lab:
 
 1. Open a [Cloud Shell](https://docs.microsoft.com/en-us/azure/cloud-shell/overview) session from the Azure Portal, or open a Linux session with Azure CLI v2.0, jq and zip packages installed. Here is the link how to install az cli on your workstation https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest
-2. Clone the repository, `git clone https://github.com/schoenemeyer/WRF3.8-in-Azure.git`
+2. Clone the repository, `git clone https://github.com/schoenemeyer/LAMMPS-in-Azure.git`
 3. Grant execute access to scripts `chmod +x *.sh`
 4. Create Virtual Machine Scale Set (https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview) for 2, 4, 8 or more nodes. Make sure you have enough quota to run your experiment. You can find on the portal a button for requesting higher core counts
 
@@ -37,7 +37,7 @@ az account set -s "your preferred subscription id"
 ```
 before you start the vmss script below, please consider the choice of your preferred region. A list of Azure regions can be found here https://azure.microsoft.com/en-us/global-infrastructure/regions/
 
-Decide for the number of nodes you are going to run, e.g. 2, and you will get a cluster with 2 nodes connected with FDR and CentOS 7.4 images with Intel MPI 5.1.3.223. Make sure you set your username correctly in the third line in the script vmss-wrf.sh.
+Decide for the number of nodes you are going to run, e.g. 2, and you will get a cluster with 2 nodes connected with FDR and CentOS 7.4 images with Intel MPI 5.1.3.223. Make sure you set your username correctly in the third line in the script vmss-lammps.sh.
 ```
 ./vmss-lammps.sh 2
 ```
