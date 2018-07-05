@@ -12,7 +12,7 @@ For this lab, it is not neccessary to download anything. The script below will d
 
 ## Performance in Azure
 
-Here is the performance for the Rhodopsin protein benchmark on the H16r series in Azure using VMSS.  Each node has 16 cores. The benchmark was executed with 800 timesteps (100 is default). The number of timesteps can be modified in the last line of the file in.rhodo.
+Two graphs below show wallclock times for the performance for the Rhodopsin protein and the Bulk Cu EAM benchmark on the H16r series in Azure using VMSS.  Each node has 16 cores. The benchmark was executed with 800 timesteps (Rhode) and 10000 steps (Cu). The number of timesteps can be modified in the last line of the inpu file.
 
 <img src="https://github.com/schoenemeyer/LAMMPS-in-Azure/blob/master/lammps.png" width="382"> <img src="https://github.com/schoenemeyer/LAMMPS-in-Azure/blob/master/lammp-cupng.png" width="382">
 
