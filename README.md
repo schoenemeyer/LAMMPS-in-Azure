@@ -41,7 +41,7 @@ Decide for the number of nodes you are going to run, e.g. 2, and you will get a 
 ```
 ./vmss-lammps.sh 2
 ```
-After the VMSS is created, you will get the command how to connect to the first VM of your cluster
+After the VMSS is created, you will see the command how to connect to the first VM of your cluster
 ```
 ssh username@<ip> -p 50000
 ```
