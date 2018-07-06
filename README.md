@@ -5,14 +5,14 @@ How to run LAMMPS Version 16 March 2018 in Azure with Virtual Machine Scale Sets
 
 The purpose of this project is to demonstrate the possibility of running LAMMPS using Virtual Machine Scale Sets in the Azure HPC Infrastructure. LAMMPS is a classical molecular dynamics code, and an acronym for Large-scale Atomic/Molecular Massively Parallel Simulator. For more details please visit http://lammps.sandia.gov/. 
 
-The source can be downloaded from https://sourceforge.net/projects/lammps/ 
+The source can be downloaded from https://sourceforge.net/projects/lammps/ ; 
 Standard Benchmarks are collected in http://lammps.sandia.gov/bench.html
 
 For this lab, it is not neccessary to download anything. The script below will download precompiled binaries and benchmark data. The VMs will be automatically deployed with CentOS 7.4 HPC and some necessary packages to run LAMMPS. We are using Version March 2018.
 
 ## Performance in Azure
 
-Two graphs below show wallclock times for the performance for the Rhodopsin protein and the Bulk Cu EAM benchmark on the H16r series in Azure using VMSS.  Each node has 16 cores. The benchmark was executed with 800 timesteps (Rhode) and 10000 steps (Cu). The number of timesteps can be modified in the last line of the inpu file.
+Two graphs below show wallclock times for the performance for the Rhodopsin protein and the Bulk Cu EAM benchmark on the H16r series in Azure using VMSS.  Each node has 16 cores. The benchmark was executed with 800 timesteps (Rhode) and 10000 steps (Cu). The number of timesteps can be modified in the last line of the input file.
 
 <img src="https://github.com/schoenemeyer/LAMMPS-in-Azure/blob/master/lammps.png" width="382"> <img src="https://github.com/schoenemeyer/LAMMPS-in-Azure/blob/master/lammp-cupng.png" width="382">
 
