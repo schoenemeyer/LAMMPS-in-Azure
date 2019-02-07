@@ -69,15 +69,10 @@ echo "create scp-script"
 rm -f install-run-lam.sh
 echo "#!/bin/bash" >> install-run-lam.sh
 echo "ulimit -s unlimited" >> install-run-lam.sh
-echo "export LD_LIBRARY_PATH=./:"'$'"LD_LIBRARY_PATH"  >> install-run-lam.sh
 echo "export INTELMPI_ROOT=/opt/intel/impi/5.1.3.223 " >> install-run-lam.sh
 echo "export I_MPI_FABRICS=shm:dapl " >> install-run-lam.sh
 echo "export I_MPI_DAPL_PROVIDER=ofa-v2-ib0 " >> install-run-lam.sh
 echo "source /opt/intel/impi/5.1.3.223/bin64/mpivars.sh " >> install-run-lam.sh
-echo "scl enable devtoolset-4 " >> install-run-lam.sh
-echo " wget https://hpccenth2lts.blob.core.windows.net/lammps/lammps.zip"  >> install-run-lam.sh 
-echo " unzip lammps.zip"  >> install-run-lam.sh 
-echo " rm lam.zip"  >> install-run-lam.sh 
 for (( i=1; i<$1; i++))
    do
    echo "scp -r * thomas@$nah$i:/home/thomas" >> install-run-lam.sh
@@ -93,10 +88,7 @@ echo "source /opt/intel/impi/5.1.3.223/bin64/mpivars.sh "
 echo " ####################################### "
 echo " LAMMPS "
 echo " ####################################### "
-echo " wget https://hpccenth2lts.blob.core.windows.net/lam/lammps.zip"
-echo " unzip lam"
-echo " rm lammps.zip"
-echo " run ./install-run-lam.sh"
+
 echo " scp -r * thomas@lamvma244000001:/home/thomas "
 echo " export LD_LIBRARY_PATH=./:"'$'"LD_LIBRARY_PATH"
 echo " no shared FS needed"
